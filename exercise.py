@@ -74,8 +74,8 @@ for train in trains:
     freq = train['frequency_in_minutes']
     name = train['train']
     if freq in trains_by_frequency:
-        trains_by_frequency[freq] = [name]
-    else:
         trains_by_frequency[freq].append(name)
+    else:
+        trains_by_frequency[freq] = [name]
 
 print(trains_by_frequency)
